@@ -20,14 +20,14 @@
 
 body {
     background: var(--neutral-800);
+    min-width: auto;
 }
 
 .wrapper {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 970px;
 }
 
 .container {
@@ -69,4 +69,83 @@ body {
     height: 70px;
     border: none;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 499px) {
+    .wrapper {
+        height: 568px;
+    }
+
+    .container {
+        width: 90%;
+        height: 60%;
+    }
+
+    .container h1 {
+        font-size: 15px;
+    }
+    
+    .container p {
+        padding: 20px 20px 0 20px;
+        font-size: 0.8rem;
+    }
+
+    .divider {
+        background: url(../public/images/pattern-divider-mobile.svg) no-repeat center center;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .wrapper {
+        height: 800px;
+    }
+
+    .container {
+        width: 500px;
+        height: 40%;
+    }
+
+    .container h1 {
+        font-size: 15px;
+    }
+    
+    .container p {
+        padding: 20px 20px 0 20px;
+        font-size: 0.8rem;
+    }
+
+    .divider {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .wrapper {
+        height: 1440px;
+    }
+
+    .container {
+        width: 35%;
+        height: 30%;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+    
+    .container p {
+        padding: 20px 20px 0 20px;
+        font-size: 1rem;
+    }
+
+    .divider {
+        width: 85%;
+    }
+
+    .dice-button {
+        bottom: -35px;
+        width: 80px;
+        height: 80px;
+    }
 }

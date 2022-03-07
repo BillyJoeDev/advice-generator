@@ -24,7 +24,7 @@ function Main() {
     <main className="wrapper">
       <div className='container'>
         <h1>ADVICE #{id}</h1>
-        <p>{advice}</p>
+        <p>"{advice}"</p>
         <div className='divider'></div>
         <button className='dice-button' onClick={getData} />
       </div>
